@@ -278,7 +278,8 @@ app = FastAPI()
 # Allow CORS for your frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://allied-engineers-datacleaningautomation.onrender.com"],  # Change for production
+    allow_origins=["https://allied-engineers-datacleaningautomation.onrender.com",
+                  "https://allied-engineers-datacleaning-automation.onrender.com"],  # Change for production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
